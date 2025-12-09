@@ -127,13 +127,7 @@ body {
 .nav-item:not(.active) .active-badge {
     display: none;
 }
-/* --- Officials Bar --- */
-.officials-bar { background-color: #eef2f6; border-bottom: 1px solid #ddd; padding: 10px 0; font-size: 0.9rem; }
-.officials-inner { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
-.official-label { font-weight: bold; color: #1665a3; text-transform: uppercase; letter-spacing: 0.5px; flex-shrink: 0; }
-.official-item { display: flex; gap: 5px; color: #444; flex-shrink: 0;}
-.official-item .role { font-weight: 600; color: #555; }
-.official-item .name { font-weight: 400; }
+
 
 /* --- Home Sections --- */
 .mission-card { background-color: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); }
@@ -272,3 +266,4 @@ body {
     .search-section { display: none; } /* Hide search box */
     /* ... (rest of media queries remain) ... */
 }
+
