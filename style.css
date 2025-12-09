@@ -128,7 +128,6 @@ body {
     display: none;
 }
 
-
 /* --- Home Sections --- */
 .mission-card { background-color: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); }
 .mission-text { max-width: 800px; margin: 0 auto; color: #4b5563; font-size: 1.1rem; }
@@ -267,3 +266,46 @@ body {
     /* ... (rest of media queries remain) ... */
 }
 
+/* --- Dropdown Menu Styles --- */
+
+.menu-dropdown-toggle {
+    /* Set the position context for the absolute dropdown */
+    position: relative;
+}
+
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    right: 0; /* Align to the right edge of the parent nav item */
+    top: 100%; /* Position right below the menu icon */
+    background-color: #ffffff;
+    min-width: 250px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 200; /* Ensure it floats above other content */
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 5px 0;
+    margin-top: 1px;
+}
+
+.dropdown-item {
+    color: #4b5563;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f4f8;
+    color: #1665a3;
+}
+
+
+/* Override the default nav-item styles for the dropdown items */
+.dropdown-content .dropdown-item i {
+    display: none; /* Hide icons in the list */
+}
