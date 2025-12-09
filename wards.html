@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wards Directory - Ghorahi</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="top-left">
+                <span data-key="directory">Directory</span>
+            </div>
+            <div class="top-center">
+                <span class="emergency-label" data-key="emergency">Emergency:</span>
+                <span class="emergency-item"><i data-lucide="shield-alert" class="icon-sm"></i> <span data-key="police">Police</span>: 100</span>
+                <span class="emergency-item"><i data-lucide="ambulance" class="icon-sm"></i> <span data-key="ambulance">Ambulance</span>: 102</span>
+                <span class="emergency-item"><i data-lucide="flame" class="icon-sm"></i> <span data-key="fire">Fire</span>: 101</span>
+            </div>
+            <button id="lang-toggle" class="lang-btn">नेपाली</button>
+        </div>
+    </div>
+
+    <header class="branding-header">
+        <div class="container branding-inner">
+            <div class="logo-section">
+                <div class="logo-circle">LOGO</div>
+                <div class="org-name">
+                    <h1 data-key="govName">Government of Nepal</h1>
+                    <h2 data-key="portalName">Community Portal - Ghorahi</h2>
+                </div>
+            </div>
+             <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="index.html" data-key="navHome">Home</a></li>
+                <li><a href="index.html#about" data-key="navAbout">About Us</a></li>
+                <li><a href="index.html#achievements" data-key="navWork">Our Work</a></li>
+                <li><a href="wards.html" class="active" data-key="navWards">Wards</a></li> 
+                <li><a href="index.html#complaint" data-key="navComplaint">Complaint Box</a></li>
+                <li><a href="#contact-footer" data-key="navContact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="officials-bar">
+        <div class="container officials-inner">
+            <div class="official-label" data-key="officialsTitle">Key Officials (Ghorahi):</div>
+            <div class="official-item"><span class="role" data-key="mayor">Mayor:</span> Naru Lal Chaudhary</div>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <section class="section-padding">
+            <div class="container">
+                <h3 class="section-title text-center text-blue" data-key="wardsTitle">Wards Directory</h3>
+                <p class="section-subtitle text-center" data-key="wardsSub">Select your ward to view detailed information (1-19)</p>
+
+                <div class="wards-grid" id="wards-grid-container"></div>
+            </div>
+        </section>
+    </main>
+
+    <div id="ward-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-ward-title" data-key="wardDetailsTitle">Ward Details</h2>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h4 class="ward-heading-label" data-key="wardHead">Ward Head:</h4>
+                <p id="modal-head-name" class="modal-info-text">--</p>
+                
+                <h4 class="ward-heading-label" data-key="population">Population:</h4>
+                <p id="modal-population" class="modal-info-text">--</p>
+                
+                <h4 class="ward-heading-label" data-key="area">Area:</h4>
+                <p id="modal-area" class="modal-info-text">--</p>
+                
+                <h4 class="ward-heading-label" data-key="keyLocations">Key Locations:</h4>
+                <p id="modal-locations" class="modal-info-text">--</p>
+
+                <p class="modal-note" data-key="modalNote">Contact the ward office directly for service inquiries.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact-footer" class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-heading" data-key="contact">Contact Information</h3>
+                    <div class="contact-list">
+                         <div class="contact-item"><i data-lucide="map-pin" class="icon-blue"></i> <div><div data-key="address">Community Portal Office</div><div class="text-gray" data-key="addressLine">Ghorahi, Dang, Nepal</div></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                 <div class="text-center text-gray" data-key="copyright">© 2025 Ghorahi Community Portal. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

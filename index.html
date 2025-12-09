@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghorahi Community Portal - Home</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="top-left">
+                <span data-key="directory">Directory</span>
+            </div>
+            <div class="top-center">
+                <span class="emergency-label" data-key="emergency">Emergency:</span>
+                <span class="emergency-item"><i data-lucide="shield-alert" class="icon-sm"></i> <span data-key="police">Police</span>: 100</span>
+                <span class="emergency-item"><i data-lucide="ambulance" class="icon-sm"></i> <span data-key="ambulance">Ambulance</span>: 102</span>
+                <span class="emergency-item"><i data-lucide="flame" class="icon-sm"></i> <span data-key="fire">Fire</span>: 101</span>
+            </div>
+            <button id="lang-toggle" class="lang-btn">नेपाली</button>
+        </div>
+    </div>
+
+    <header class="branding-header">
+        <div class="container branding-inner">
+            <div class="logo-section">
+                <div class="logo-circle">LOGO</div>
+                <div class="org-name">
+                    <h1 data-key="govName">Government of Nepal</h1>
+                    <h2 data-key="portalName">Community Portal - Ghorahi</h2>
+                </div>
+            </div>
+            <div class="search-section">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search...">
+                    <i data-lucide="search" class="search-icon"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="index.html" class="active" data-key="navHome">Home</a></li>
+                <li><a href="#about" data-key="navAbout">About Us</a></li>
+                <li><a href="#achievements" data-key="navWork">Our Work</a></li>
+                <li><a href="wards.html" data-key="navWards">Wards</a></li>
+                <li><a href="https://forms.gle/depZP4VXUf9ouQNeA" target="_blank" data-key="navComplaint">Complaint Box</a></li>
+                <li><a href="#contact-footer" data-key="navContact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="officials-bar">
+        <div class="container officials-inner">
+            <div class="official-label" data-key="officialsTitle">Key Officials (Ghorahi):</div>
+            <div class="official-item">
+                <span class="role" data-key="mayor">Mayor:</span> 
+                <span class="name">Naru Lal Chaudhary</span>
+            </div>
+            <div class="official-item">
+                <span class="role" data-key="deputyMayor">Deputy Mayor:</span> 
+                <span class="name">Huma DC</span>
+            </div>
+            <div class="official-item">
+                <span class="role" data-key="cdo">CDO:</span> 
+                <span class="name">Ram Bandhu Subedi</span>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        
+        <section id="home" class="section-padding">
+            <div class="container">
+                <div class="card mission-card">
+                    <h3 class="section-title text-center" data-key="missionTitle">Our Community Mission</h3>
+                    <p class="mission-text text-center" data-key="missionText">
+                        We are committed to fostering transparency, accountability, and sustainable development within Ghorahi. 
+                        Through collaborative efforts, we strive to improve infrastructure and public services.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="section-padding bg-white">
+            <div class="container">
+                <h3 class="section-title text-center text-blue" data-key="achievementsTitle">Our Achievements</h3>
+                <p class="section-subtitle text-center" data-key="achievementsSub">Recent projects transforming our community</p>
+                
+                <div class="achievements-grid">
+                    <div class="achievement-card"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800" alt="Building Project"></div>
+                    <div class="achievement-card"><img src="https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?w=800" alt="Lab Project"></div>
+                    <div class="achievement-card"><img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800" alt="Workshop Project"></div>
+                </div>
+            </div>
+        </section>
+
+        </main>
+
+    <footer id="contact-footer" class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-heading" data-key="contact">Contact Information</h3>
+                    <div class="contact-list">
+                        <div class="contact-item"><i data-lucide="map-pin" class="icon-blue"></i> <div><div data-key="address">Community Portal Office</div><div class="text-gray" data-key="addressLine">Ghorahi, Dang, Nepal</div></div></div>
+                        <div class="contact-item"><i data-lucide="phone" class="icon-blue"></i> <div><div class="text-gray" data-key="phone">Phone</div><div>+977-82-560000</div></div></div>
+                        <div class="contact-item"><i data-lucide="mail" class="icon-blue"></i> <div><div class="text-gray" data-key="email">Email</div><div>info@ghorahi.gov.np</div></div></div>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-heading" data-key="links">Important Links</h3>
+                    <ul class="footer-links" id="links-list"></ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-heading" data-key="hours">Office Hours</h3>
+                    <div class="hours-content">
+                        <div><div class="text-gray mb-1" data-key="hoursInfo">Sunday - Friday</div><div data-key="hoursTime">10:00 AM - 5:00 PM</div></div>
+                        <div class="closed-notice" data-key="closed">Closed on Saturdays and Public Holidays</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div><span data-key="lastUpdated">Last Updated</span>: <span id="date-display">December 8, 2025</span></div>
+                <div class="copyright" data-key="copyright">© 2025 Ghorahi Community Portal. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
