@@ -42,18 +42,30 @@
         </div>
     </header>
 
-    <nav class="main-nav">
-        <div class="container">
-            <ul>
-                <li><a href="index.html" class="active" data-key="navHome">Home</a></li>
-                <li><a href="#about" data-key="navAbout">About Us</a></li>
-                <li><a href="#achievements" data-key="navWork">Our Work</a></li>
-                <li><a href="wards.html" data-key="navWards">Wards</a></li>
-                <li><a href="https://forms.gle/depZP4VXUf9ouQNeA" target="_blank" data-key="navComplaint">Complaint Box</a></li>
-                <li><a href="#contact-footer" data-key="navContact">Contact Us</a></li>
-            </ul>
-        </div>
-    </nav>
+    <nav class="icon-nav">
+    <div class="container icon-nav-inner">
+        <a href="index.html" class="nav-item active">
+            <i data-lucide="home"></i>
+            <span data-key="navHome">Home</span>
+            <span class="active-badge" aria-label="Active Page"></span>
+        </a>
+
+        <a href="wards.html" class="nav-item">
+            <i data-lucide="folder-open"></i>
+            <span data-key="navWards">Wards</span>
+        </a>
+
+        <a href="https://forms.gle/depZP4VXUf9ouQNeA" target="_blank" class="nav-item">
+            <i data-lucide="file-text"></i>
+            <span data-key="navComplaint">Complaint</span>
+        </a>
+
+        <a href="#" class="nav-item">
+            <i data-lucide="menu"></i>
+            <span data-key="navMenu">Menu</span>
+        </a>
+    </div>
+</nav>
 
     <div class="officials-bar">
         <div class="container officials-inner">
