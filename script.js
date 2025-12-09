@@ -235,3 +235,40 @@ function renderContent() {
     // Re-generate wards with current language label (if on wards page)
     generateWards(t.navWards); 
 }
+// Function to toggle the menu on click
+function toggleMenuDropdown(event) {
+    const menuToggle = event.currentTarget;
+    const dropdown = menuToggle.querySelector('.dropdown-content');
+
+    // Toggle display of the dropdown
+    if (dropdown.style.display === 'block') {
+        dropdown.style.display = 'none';
+        menuToggle.classList.remove('open');
+    } else {
+        // Close any other open dropdowns first
+        document.querySelectorAll('.menu-dropdown-toggle').forEach(otherMenu => {
+            otherMenu.querySelector('.dropdown-content').style.display = 'none';
+            otherMenu.classList.remove('open');
+        });
+        
+        // Open the current one
+        dropdown.style.display = 'block';
+        menuToggle.classList.add('open');
+    }
+    
+    // Stop the default anchor behavior for the dropdown toggle
+    event.preventDefault(); 
+}
+
+// Update the DOMContentLoaded listener in script.js to include this:
+
+document.addEventListener('DOMContentLoaded', () => {
+    // ... (Your existing code here)
+
+    // --- Menu Dropdown Listener ---
+    document.querySelectorAll('.menu-dropdown-toggle').forEach(menuItem => {
+        menuItem.addEventListener('click', toggleMenuDropdown);
+    });
+
+    // ... (Rest of your existing code here)
+});
